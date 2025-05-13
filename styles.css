@@ -1,0 +1,427 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    font-family: DM Sans,sans-serif;
+    font-size:18px;
+    background-color:whitesmoke;
+}
+.container{
+    width:60%;
+    margin:50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100,1fr));
+    gap: 1em;
+    grid-template-areas: 
+    "card_1 card_2 card_2 card_3"
+    "card_1 card_2 card_2 card_3"
+    "card_1 card_4 card_5 card_3"
+    "card_6 card_4 card_5 card_3"
+    "card_6 card_7 card_8 card_8"
+    "card_6 card_7 card_8 card_8";
+}
+:root{
+--Purple-1: hsl(254, 88%, 90%);
+--Purple-2: hsl(256, 67%, 59%);
+--Yellow-1: hsl(31, 66%, 93%);
+--Yellow-2: hsl(39, 100%, 71%);
+--White: hsl(0, 0%, 100%);
+--Black: hsl(0, 0%, 7%);
+
+}
+
+.card_1{
+    grid-area: card_1;
+    background-color: var(--Yellow-1);
+    border-radius: 5px; 
+    
+}
+.card_2{
+    grid-area: card_2;
+    background-color: var(--Purple-2);
+    border-radius: 5px;
+}
+.card_3{
+    grid-area: card_3;
+    background-color: var(--Purple-1);
+    border-radius: 5px;
+}
+.card_4{
+    grid-area: card_4;
+    background-color: var(--White);
+    border-radius: 5px;
+}
+.card_5{
+    grid-area: card_5;
+    background-color: var(--Yellow-2);
+    border-radius: 5px;
+}
+.card_6{
+    grid-area: card_6;
+    background-color: var(--Yellow-2);
+    border-radius: 5px;
+}
+.card_7{
+    grid-area: card_7;
+    background-color: var(--White);
+    border-radius: 5px;
+}
+.card_8{
+    grid-area: card_8;
+    background-color: var(--Purple-2);
+    border-radius: 5px;
+    display: flex;
+    gap:0;
+    justify-content: center;
+    align-items: center;
+}
+.card_1 .img img{
+    width:70%;
+    height: auto;
+    margin-left: 20px;
+    
+}
+.card_2 .img img{
+    width:25%;
+    height: auto;
+    margin-left: 185px;
+}
+.card_3 .img img{
+    width:100%;
+    height:180px;
+    margin-left:5px;
+    margin-bottom: 20px;
+    
+}
+.card_4 .img img{
+    width:100%;
+    padding-top: 20px;
+    padding-left: 35px;
+    height: auto;
+    
+}
+.card_5 .img img{
+    width:85%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 0;
+   
+}
+.card_6 .img img{
+    width:85%;
+    height: auto;
+    margin: 20px 18px;
+   
+}
+.card_7 .img img{
+    width:70%;
+    height: auto;
+    margin-top: 25px;
+    margin-left: 10px;
+    
+}
+.card_8 .img img{
+    width:80%;
+    height: auto;
+    margin-left: 25px;    
+}
+.card_1 .text p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: .9em;
+    padding-top:50px;
+    padding-left: 18px;
+    margin-bottom: 15px;
+    color: var(--Black);
+
+}
+.card_1 .text p span{
+    color: var(--Purple-2);
+}
+.card_2 .text1 .p1{
+    font-size:2rem;
+    font-weight:400;
+    line-height:.5em;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 25px;
+    color: var(--White);
+
+}
+.card_2 .text1 .p2{
+    font-size:1.8rem;
+    font-weight:400;
+    text-align: center;
+    margin-top: 0;
+    color: var(--White);
+
+}
+ 
+
+.card_2 .text2 p{
+    font-size:.8rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 40px;
+    color: var(--Purple-1);
+}
+.card_2 .text1 p span{
+    color: var(--Yellow-2);
+}
+.card_3 .text1 p{
+    font-size:1rem;
+    font-weight: 500;
+    line-height: .8em;
+    color: var(--Black);
+    padding-top: 20px;
+    padding-left:15px;
+    padding-right: 5px;
+    padding-bottom: 17px;
+}
+.card_3 .text2 p{
+    font-size: .7rem;
+    font-weight: 400;
+    color: var(--Black);
+    padding-top: 35px;
+    padding-left: 10px;
+}
+.card_4 .text p{
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: .8em;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+.card_5 .text p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: .8em;
+    padding: 17px;
+}
+.card_6 .text p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: .9em;
+    padding: 10px;
+}
+.card_7 .text p{
+    font-size: .8rem;
+    padding: 10px;
+}
+.card_7 .text p span{
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: var(--Black);
+}
+.card_8 .text p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--White);
+}
+@media(max-width:600px){
+    .container{
+      display:flex;
+      flex-direction: column;
+      gap: 1em;
+      justify-content: center;
+      align-items: center;
+       
+    } 
+
+    
+    .card_2 .img img{
+     max-width:25%;
+     margin-left: 5px;
+}
+    .card_2 .text1 .p1{
+      font-size:1.8rem;
+      line-height:.8em;
+      margin-bottom: 0;
+      padding-top:5px;
+
+}
+.card_2 .text1 .p2{
+    font-size:1.8rem;
+    margin-top: 0;
+    line-height: .8em;
+
+}
+ .card_2 .text2 p{
+    font-size:.5rem;
+}
+.card_4 .img img{
+    max-width:250px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 0;
+    
+}
+.card_4 .text p{
+    font-size: .5rem;
+    line-height: .8em;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+.card_5 .text p{
+    font-size:1rem;
+    padding-left: 9px;
+}
+.card_5 .img img{
+    width:65%;
+    margin-top: .1em;
+    margin-left: 10px;
+   
+}
+.card_3 .img img{
+    width:85%;
+    margin-left:15px;
+    margin-bottom:1px;
+    
+}
+.card_3 .text1 p{
+    font-size:.8rem;
+    font-weight: 500;
+    color: var(--Black);
+    padding-top: 20px;
+    padding-left:15px;
+    padding-bottom: 17px;
+}
+.card_3 .text2 p{
+    font-size: .5rem;
+    font-weight: 400;
+    color: var(--Black);
+    padding: 10px;
+}
+.card_8{
+    display: flex;
+    flex-direction: column;
+}
+.card_8 .img img{
+    width:50%;
+    margin-top: 10px;  
+}
+.card_8 .text p {
+    font-size: 1.15rem;
+    line-height: .8em;
+    padding: 8px 20px;
+}
+.card_8 .text p span{
+    padding-left: 25px;
+}
+.card_7 .text p{
+    font-size: .7rem;
+    padding-top: 10px;
+}
+.card_7 .text p span{
+    font-size: 2.4rem;
+}
+.card_7 .img img{
+    width:20%; 
+    margin-top: 0;
+    margin-bottom: 15px;  
+}
+.card_1 .text p{
+    font-size: 1rem;
+    padding-left: 12px;
+
+}
+.card_1 .img img{
+    width:60%;
+    
+}
+.card_6 .text p{
+    font-size: 1rem;
+    padding-bottom: 0px;
+}
+.card_6 .img img{
+    width:75%;
+    margin: 10px
+   
+}
+}
+@media(max-width:1024px){
+    .container{
+        grid-template-areas: 
+        "card_1 card_2"
+        "card_3 card_4"
+        "card_5 card_6"
+        "card_7 card_8";
+        grid-template-columns: repeat(2,1fr);
+        margin:0 10%;
+    }
+    .card_1 .text p{
+    padding-right: 12px;
+    }
+    .card_2 .img img{
+    margin-left: 129px;
+    }
+    .card_2 .text2 p{
+    font-size:1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+}   
+    .card_2 .text1 .p1{
+    padding-top: 55px;
+
+}  
+    .card_3 .img img{
+    margin-left:15px;
+    margin-bottom: 0;
+    
+}
+    .card_3 .text2 p{
+    font-size: 1rem;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 25px;
+}
+    
+    .card_4 .img img{
+    width:380px;
+   
+}
+    .card_4 .text p{
+    font-size: 2.5rem;
+    line-height: .9em;
+    padding-left: 12px;
+    padding-bottom: 2px;
+}
+    
+   .card_5 .text p{
+    font-size: 2.9rem;
+    line-height: .9em;
+    padding-bottom: 1px;
+    padding-top: 50px;
+}
+    .card_6 .text p{
+    font-size: 2.5rem;
+    padding-top: 29px;
+    padding-left: 12px;
+}  
+   .card_6 .img img{
+    width:70%;
+   
+}
+    .card_7 .text p{
+    font-size: 1.2rem;
+}
+   .card_7 .text p span{
+    font-size: 3.9rem;
+}
+   .card_7 .img img{
+    width:100%;
+    
+} 
+   .card_8 .text p {
+    font-size: 1.6rem;
+}
+} 
